@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Lora", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+nav {
+  background-color: #85A389;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+ 
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+  font-size: 17px;
+}
+ 
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+ 
+aside {
+  flex: 1;
+}
+ 
+h2 {
+  color: #85A389;
+}
+ 
+h3 {
+  color: #85A389;
+}
+
+p {
+  text-align: justify
+}
+ 
+footer {
+  padding: 20px;
+  color: black;
+  text-align: center;
+  background-color: #F7FFE5;
+}
+ 
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #F7FFE5;
+  text-align: center;
+  color: black;
+}
+ 
+.profile header {
+  text-align: center;
+}
+ 
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image {
+  width: 25%;
+  max-height: 200px;
+  object-position: center;
+}
+ 
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+ 
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
